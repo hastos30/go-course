@@ -9,7 +9,7 @@ func main() {
 		Строка не закрыта и тянется до конца строки файла.
 	*/
 
-	// fmt.Println(Viktor")
+	fmt.Println("Viktor")
 
 	fmt.Println("Linux")
 	fmt.Println("software developer Go backend")
