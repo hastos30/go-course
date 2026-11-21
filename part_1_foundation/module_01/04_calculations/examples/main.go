@@ -54,5 +54,24 @@ func main() {
 	fmt.Println("-7 / 2 =", -7/2)
 	fmt.Println("-7 % 2 =", -7%2)
 
-	
+	price2 := 19.5
+	quantity2 := 3
+	total2 := price2 * float64(quantity2)
+	fmt.Println("Total:", total2)
+
+	sum := 17
+	count := 5
+	fmt.Println("Integer average:", sum/count)
+	fmt.Println("Float average:", float64(sum)/float64(count))
+
+	fmt.Println("Too late:", float64(sum/count))
+
+	temperature := 23.9
+	rounded := int(temperature)
+	fmt.Println("int(23.9) =", rounded)
+	cold := -23.9
+	fmt.Println("int(-23.9) =", int(cold))
+
+	fmt.Println("temerature:", temperature)
+	fmt.Printf("Types: %T and %T\n", temperature, rounded)
 }
