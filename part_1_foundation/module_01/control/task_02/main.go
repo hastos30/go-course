@@ -13,6 +13,7 @@ func main() {
 	x += c * d
 	fmt.Printf("%d %d %.1f %.1f %d\n", c, d, e, f, x)
 	fmt.Printf("%v %T\n", 10/4*2.0, 10/4*2.0)
+
 }
 
 // 3 2 3.4 3.0 13
