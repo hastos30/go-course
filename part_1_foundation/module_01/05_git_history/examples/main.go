@@ -4,6 +4,6 @@ import "fmt"
 
 func main() {
 	price := 250
-	quantity := 3
+	quantity := 7
 	fmt.Println("Total:", price*quantity)
 }
