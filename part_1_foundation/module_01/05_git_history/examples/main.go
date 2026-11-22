@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	price := 250
+	price := 300
 	quantity := 7
 	fmt.Println("Total:", price*quantity)
 }
