@@ -6,26 +6,26 @@ func main() {
 	item := "Notebook"
 	price := 349
 	quantity := 7
-	const discount = 15
+	const discountPercent = 15
 	const boxSize = 3
 	delivery := 250
-	perPerson := 3
+	people := 3
 
 	subTotal := price * quantity
-	discountAmount := float64(subTotal) * (float64(discount) / 100)
+	discountAmount := float64(subTotal) * (float64(discountPercent) / 100)
 	total := float64(subTotal) - discountAmount + float64(delivery)
-	pricePerPerson := total / float64(perPerson)
+	pricePerPerson := total / float64(people)
 	fullBoxes := quantity / boxSize
 	leftOver := quantity % boxSize
 
 	fmt.Println("Receipt")
-	fmt.Printf("Item:		%s\n", item)
-	fmt.Printf("Price:		%d RUB\n", price)
-	fmt.Printf("Quantity:	%d\n", quantity)
-	fmt.Printf("Subtotal:	%d RUB\n", subTotal)
-	fmt.Printf("Discount:	%d%% (-%.2f RUB)\n", discount, discountAmount)
-	fmt.Printf("Delivery:	%d RUB\n", delivery)
-	fmt.Printf("Total: 		%.2f RUB\n", total)
-	fmt.Printf("Per person:	%.2f RUB (%d people)\n", pricePerPerson, perPerson)
-	fmt.Printf("Boxes:		%d full, %d left over\n", fullBoxes, leftOver)
+	fmt.Printf("%-12s %s\n", "Item:", item)
+	fmt.Printf("%-12s %d RUB\n", "Price:", price)
+	fmt.Printf("%-12s %d\n", "Quantity:", quantity)
+	fmt.Printf("%-12s %d RUB\n", "Subtotal:", subTotal)
+	fmt.Printf("%-12s %d%% (-%.2f RUB)\n", "Discount:", discountPercent, discountAmount)
+	fmt.Printf("%-12s %d RUB\n", "Delivery:", delivery)
+	fmt.Printf("%-12s %.2f RUB\n", "Total:", total)
+	fmt.Printf("%-12s %.2f RUB (%d people)\n", "Per person:", pricePerPerson, people)
+	fmt.Printf("%-12s %d full, %d left over\n", "Boxes:", fullBoxes, leftOver)
 }
