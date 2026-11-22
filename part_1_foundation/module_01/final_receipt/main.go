@@ -3,13 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	item := "Notebook"
-	price := 349
-	quantity := 7
-	const discountPercent = 15
-	const boxSize = 3
-	delivery := 250
-	people := 3
+	item := "Pen"
+	price := 45
+	quantity := 11
+	const discountPercent = 12
+	const boxSize = 4
+	delivery := 180
+	people := 5
 
 	subTotal := price * quantity
 	discountAmount := float64(subTotal) * (float64(discountPercent) / 100)
