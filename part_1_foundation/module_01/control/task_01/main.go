@@ -22,7 +22,7 @@ func main() {
 	totalHours := float64(totalSeconds) / secondsInHour
 	speed := distanceKm / totalHours
 
-	fmt.Printf("Disctance: %.3f km\n", distanceKm)
+	fmt.Printf("Distance: %.3f km\n", distanceKm)
 	fmt.Printf("Time: %dh %dm %ds\n", hours, minutes, seconds)
 	fmt.Printf("Speed: %.2f km/h\n", speed)
 }
